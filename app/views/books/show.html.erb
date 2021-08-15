@@ -7,7 +7,7 @@
 <%= @book.body %>
 
 <div>
-<a href="book/edit">Edit</a>
+      <%= link_to "Edit", edit_book_path(@book) %>
 "|"
 <a href="book/index">Back</a>
 </div>

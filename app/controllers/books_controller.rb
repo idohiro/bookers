@@ -22,7 +22,7 @@ class BooksController < ApplicationController
   end
 
   def update
-    book = Bool.find(params[:id])
+    book = Book.find(params[:id])
     book.update(book_params)
     redirect_to book_path(book)
   end
