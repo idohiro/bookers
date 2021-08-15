@@ -13,18 +13,28 @@
     </tr>
   </thead>
   <tbody>
-    <!--  <div class="blog-box">-->
-    <!--    <% @books.each do |book| %>-->
-    <!--      <section class="blog-text">-->
-    <!--    <th> <p class="blog-text-heading"><%= link_to book.title, book_path(book) %></p></th>-->
-    <!--      <th>  <p class="blog-date"><%= book.created_at %></p></th>-->
-    <!--        <span class="category"><%= blog.body %></span>-->
-    <!--      </section>-->
-    <!--  <% end %>-->
-    <!--</div>-->
+   <% @books.each do |book| %>
+        <th><%= link_to book.title, book_path(book) %></th>
+            <th><%= book.body %></th>
+      <th><p><a href="/books/show">Show</a></p></th>
+      <th><p><a href="/books/edit">Edit</a></p></th>
+      <th><p><a href="/books/destory">Destory</a></p></th>
+   <% end %>
+
+    </div>
 
   </tbody>
 </table>
 
+
 <h2>new books</h2>
-<form class="new_book" id="new_book" action="/books" method="post"></form>
+<%= form_with model:@book, local:true do |f| %>
+
+  <%= f.text_field :title %>
+
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Create Book' %>
+
+  <% end %>

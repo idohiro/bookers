@@ -28,6 +28,7 @@ h1{
 
 a {
   color: black;
+  padding: 3px 5px;
  }
 
  a:hover{
@@ -38,3 +39,7 @@ a {
  }
 
 
+
+tr{
+display: table-row
+}
