@@ -10,11 +10,5 @@
 
 <a href="books/Show">Show</a>
 "|"
-<a href="book/index">Back</a>
+<a href="books">Back</a>
 
-
-  def update
-    blog = Blog.find(params[:id])
-    blog.update(blog_params)
-    redirect_to blog_path(blog)
-  end

@@ -21,6 +21,10 @@
   color: #6c6b6b;
 }
 
+body{
+  margin-right: 33px
+}
+
 h1{
   margin-left: 33px;
 }
@@ -37,8 +41,14 @@ a {
    color:white;
 
  }
+div{
+  margin-right: 50px
+}
 
 
+table{
+  margin-right: 50px;
+}
 
 tr{
 display: table-row
