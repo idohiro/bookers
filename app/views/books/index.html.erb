@@ -27,12 +27,12 @@
 <h2>new books</h2>
   <% if @book.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@book.errors.count, "error") %> errors prohibited this book from being saved:</h2>
+      <h2 style="color: white;background-color:red;"><%= pluralize(@book.errors.count, "error") %> errors prohibited this book from being saved:</h2>
       <% if @book.errors.include?(:title) %>
-         <p style="color: red;"><%= @book.errors.full_messages_for(:title).first %>
+         <p style="color: black; background-color:gray;"><%= @book.errors.full_messages_for(:title).first %>
       <% end %>
       <% if @book.errors.include?(:body) %>
-        <p style="color: red;"><%= @book.errors.full_messages_for(:body).first %>
+        <p style="color: black; background-color:gray;"><%= @book.errors.full_messages_for(:body).first %>
       <% end %>
     </div>
   <% end %>
