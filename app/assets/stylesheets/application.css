@@ -31,6 +31,7 @@ h1,h2{
 
 
 a {
+  font-size: 13px;
   color: black;
   padding: 3px 5px;
  }
@@ -47,6 +48,7 @@ div{
 
 
 table{
+  font-size:13px;
   margin: 33px;
 }
 
@@ -55,8 +57,14 @@ display: table-row
 }
 
 th,td{
+  font-size: 13px;
   padding:0 5px 7px 5px;
 }
+th{
+  font-weight: bold;
+  text-align: inherit;
+}
+
 div{
   margin-top:33px;
   margin-left: 33px;
